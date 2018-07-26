@@ -13,7 +13,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('images/profile_girl.jpg');
+    background-image: url(<?php echo get_template_directory_uri(); ?>/images/profile_girl.jpg);
     min-height: 100%;
 }
 </style>
@@ -47,8 +47,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <header class="w3-container w3-center" style="padding:128px 16px" id="home">
     <h1 class="w3-jumbo"><b>Jane Doe</b></h1>
     <p>Photographer and Web Designer.</p>
-    <img src="images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
-    <img src="images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
     <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
       <i class="fa fa-download"></i> Download Resume
     </button>
@@ -62,16 +62,16 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
-        <img src="images/wedding.jpg" style="width:100%">
-        <img src="images/rocks.jpg" style="width:100%">
-        <img src="images/sailboat.jpg" style="width:100%">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/wedding.jpg" style="width:100%">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/rocks.jpg" style="width:100%">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/sailboat.jpg" style="width:100%">
       </div>
 
       <div class="w3-half">
-        <img src="images/underwater.jpg" style="width:100%">
-        <img src="images/chef.jpg" style="width:100%">
-        <img src="images/wedding.jpg" style="width:100%">
-        <img src="images/p6.jpg" style="width:100%">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/underwater.jpg" style="width:100%">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/chef.jpg" style="width:100%">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/wedding.jpg" style="width:100%">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/p6.jpg" style="width:100%">
       </div>
     <!-- End photo grid -->
     </div>
@@ -125,15 +125,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
     <!-- Testimonials -->
     <h3 class="w3-padding-24">My Reputation</h3>
-    <img src="images/avatar_smoke.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/avatar_smoke.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <p><span class="w3-large w3-text-black w3-margin-right">Chandler Bing.</span> Web Designer.</p>
     <p>Jane Doe is just awesome. I am so happy to have met her!</p><br>
    
-    <img src="images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <p><span class="w3-large w3-text-black w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
     <p>Jane Doe saved us from a web disaster.</p><br>
     
-    <img src="images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <p><span class="w3-large w3-text-black w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
     <p>No one is better than Jane Doe.</p><br>
     
@@ -251,7 +251,7 @@ function closeNav() {
     document.getElementById("mySidebar").style.display = "none";
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
